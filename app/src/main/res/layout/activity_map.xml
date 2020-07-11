@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/map_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.naver.maps.map.MapFragment"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="100 ~"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/btn_green">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="30~100"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/btn_orange">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_red"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="2~30"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray"
+                android:text="~1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
